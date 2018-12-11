@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+
+ <center><div id="header"> <img src="" alt="" /> <ul>
+<li><a href="index1.html">Home</a></li> <li><a href="Contact.html">Contact</a></li> <li><a href="Price.html">Package Selection</a></li> <li><a href="Portfolio.html">Portfolio</a></li> <li><a href="Checkout.html">Shopping Cart</a></li><li><a href="Newsletter.html">Newsletter</a></li>
+</ul> </div></center>
+     <style> body {background-color: #E5E8E8;}
+    </style>
+
+<center><div class="bgimg">
+  <div class="topleft">
+    <p>Candid Pictures Newsletter</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    
+  </div>
+</div></center>
+
+<center>
+<p id="demo"></p>
+
+<script>
+
+var countDownDate = new Date("Dec 4, 2018 15:37:25").getTime();
+
+
+var x = setInterval(function() {
+
+  
+  var now = new Date().getTime();
+
+
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script></center>
+
+<form action="action_page.php">
+  <div class="container">
+    <h2>Subscribe to our Newsletter</h2>
+    <p></p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Monthly Newsletter
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2> Client Testimonial</h2>
+
+
+<div class="container">
+  <img src="images.jpeg" alt="Avatar" style="width:90px">
+  <p><span>Jane Fox.</span> Bride </p>
+  <p>Jason and James did an incredible job at our wedding. They were so thorough and polite! they made our wedding experience very enjoyable.</p>
+</div>
+
+<div class="container">
+  <img src="images-1.jpeg" alt="Avatar" style="width:90px">
+  <p><span>Rebecca Flex.</span> Bride </p>
+  <p>Oh my!!!! Jason and James are an incredible team and did a wonderful job at our wedding.  5 Stars!!!!</p>
+</div>
+
+</body>
+</html>
